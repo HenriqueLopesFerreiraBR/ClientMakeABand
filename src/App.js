@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './pages/Login';
+import Admin from './pages/Admin';
+import SearchBands from './pages/SearchBands';
+import Profile from './pages/Profile';
+import Logout from './pages/Logout';
+
+import GlobalStyles from './GlobalStyles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <GlobalStyles />
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/search-bands" element={<SearchBands />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/logout" element={<Logout />} />
+        {/* Handle potential unmatched routes gracefully */}
+        <Route path="*" element={<div>Page Not Found</div>} />
+      </Routes>
+    </Router>
   );
 }
 

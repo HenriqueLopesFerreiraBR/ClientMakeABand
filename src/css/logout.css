@@ -1,0 +1,40 @@
+/* Logout Page Styles */
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #383838;
+  }
+  
+  .logout-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .logout-box h2 {
+    margin-bottom: 20px;
+  }
+  
+  .logout-box button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+
+  .logout-box button:hover{
+    background-color: #025bb9;
+  }
+  
+  .logout-box a{
+    color: white;
+    text-decoration: none;
+  }

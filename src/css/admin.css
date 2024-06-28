@@ -1,0 +1,10 @@
+/* Admin Page Styles */
+.admin-container {
+    display: flex;
+  }
+  
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+  }
+  
